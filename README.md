@@ -1,9 +1,17 @@
-## Steps for installation
+## Projeyi Ayağa Kaldırma Adımları
 
-- Clone the project
-- Navigate into the app folder `cd app`
-- Run `yarn install`
-- Navigate into the server folder `cd server`
-- Run `npm install`
-- Then start the server using `npm start`
-- Within the app, run `expo start --ios` to start the app via an IOS Emulator.
+- repoyu klonlayın
+- projede terminali açın ve `cd app` ile app klasörüne gelin
+- node_modules için `yarn install` veya `node install` çalıştırın
+- `node install` için hata alırsanız, `node update` çalıştırın
+- projede terminali açın ve `cd server` ile server klasörüne gelin
+- node_modules için `npm install` çalıştırın
+- serveri ayağa kaldırmak için `npm start`, çalışmaz ise `node index`.
+- projede terminali açın ve `cd app` ile app klasörüne gelin
+- uygulamayı ayağa kaldırmak için,  `npx expo start`.
+
+Not: Server ile mobil app'in bağlantısı local bir bağlantıdır. Bu nedenle backend'in çalıştığı bilgisayırın ip adresini
+app klasörü altındaki config.js dosyasına yazmalısınız.
+- cmd'yi açın ip config yazın
+- IPV4 adresini kopyalayın
+- `config.js` içinde `SOCKET_URL` 'ye  yapıştırın.
